@@ -1,0 +1,6 @@
+gold
+1000
+home
+15000
+banana
+1

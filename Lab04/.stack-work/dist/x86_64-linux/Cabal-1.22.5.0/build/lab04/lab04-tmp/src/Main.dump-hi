@@ -1,0 +1,150 @@
+
+==================== FINAL INTERFACE ====================
+2016-12-20 19:08:43.522279 UTC
+
+interface main@main:Main 7103
+  interface hash: 718565ad854bb484842e326e48ede2c3
+  ABI hash: 50d15689803ee2d380ff68facb8d9535
+  export-list hash: 1f196230d46b142ebbd063e2f9b9ee1f
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 5f42e91bbbe94f173528a0736c5d6c88
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+module dependencies: BinTree Lab04 REPL
+package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.IO.Handle 631f32e0ad65df940f6a2b3e721d8452
+import  -/  base-4.8.2.0:GHC.IO.Handle.FD 4b888b3713ea36bd21caa2badeaf319d
+import  -/  base-4.8.2.0:GHC.IO.Handle.Types fe7c781ed6b3f00c4b1f0266e32a6e61
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  base-4.8.2.0:System.IO 0248c1e850b7ea124cf7a2e1669ebf67
+import  -/  BinTree 03e75a5640ff3e092d41e970eca6a216
+  exports: 71448bd79c2ab5bcc92c157d1120de03
+  Empty cda84d3d71af71ac5a3a48fcf6a72805
+import  -/  Lab04 2dfa53a4885c89389e0725df840d84fe
+  exports: 3334e61850c7ed03a7c5cb4cd505794d
+  done04 8d5bd6616f40888ac0dd167abbcd17d3
+  execute04 626b26b8108b799aac19d47eb05a2967
+  exit04 117e8595da4d495f8494bb13e7a7b3c5
+  prompt04 71aa65f589b50388f682499c8c59edf7
+import  -/  REPL 522713d1306eda27264d8d9a1f4651fb
+  exports: d909f20870ecd914effb556280d3fcfc
+  srepl 6ec8c2037c42e7609781ce0e17baa530
+5791b250792e787932bc9c6c71159b9c
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+5d354d7ea285fbf3dc02fc1ff01a3b64
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main6
+                        GHC.Types.True
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.hSetBuffering1
+                        GHC.IO.Handle.FD.stdout
+                        GHC.IO.Handle.Types.NoBuffering
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case REPL.hrepl1
+                        @ Lab04.State
+                        @ GHC.Types.Float
+                        GHC.IO.Handle.FD.stdin
+                        GHC.IO.Handle.FD.stdout
+                        Lab04.prompt1
+                          `cast`
+                        (<GHC.IO.Handle.Types.Handle>_R
+                         ->_R <Lab04.State>_R
+                         ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R))
+                        Lab04.done04
+                        Main.main5
+                          `cast`
+                        (<Lab04.State>_R
+                         ->_R Sym (GHC.Types.NTCo:IO[0] <GHC.Types.Float>_R))
+                        Lab04.execute1
+                          `cast`
+                        (<GHC.IO.Handle.Types.Handle>_R
+                         ->_R <GHC.IO.Handle.Types.Handle>_R
+                         ->_R <[GHC.Types.Char]>_R
+                         ->_R <Lab04.State>_R
+                         ->_R Sym (GHC.Types.NTCo:IO[0] <Lab04.State>_R))
+                        Main.main3
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        (GHC.CString.unpackAppendCString#
+                           "\n\
+                           \\tFinal Result: "#
+                           (case ipv5 of ww { GHC.Types.F# ww1 ->
+                            GHC.Float.$w$sshowSignedFloat1
+                              GHC.Float.$fShowFloat_$sshowFloat
+                              GHC.Show.shows18
+                              ww1
+                              (GHC.Types.[] @ GHC.Types.Char) }))
+                        GHC.Types.True
+                        ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   Main.main2
+                   GHC.Types.True
+                   ipv6 } } } }) -}
+13b50abdbaf6ee6358a7b7c8c0de8442
+  main2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "\n\
+                   \\tGoodbye !\n"#) -}
+5ba21b9f41652aba675bd890a0f47c5a
+  main3 ::
+    (BinTree.BinTree GHC.Base.String GHC.Types.Float, GHC.Types.Float)
+  {- HasNoCafRefs,
+     Unfolding: ((BinTree.Empty @ GHC.Base.String @ GHC.Types.Float,
+                  Main.main4)) -}
+f880c49a2c9692cbc8341fff5282aa33
+  main4 :: GHC.Types.Float
+  {- HasNoCafRefs, Unfolding: (GHC.Types.F# __float 0.0) -}
+940231a3c0db3aee11495e146e7494ee
+  main5 ::
+    Lab04.State
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Float #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(A,1*U)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ state :: Lab04.State
+                   s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 (# s,
+                    case state of wild { (,) holder checkingThis ->
+                    checkingThis } #)) -}
+9fe217f4a4cb04dbfd1b9f4a07024e5d
+  main6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "\n\
+                   \\t Welcome to Lab 04\n"#) -}
+0f27fbfe7439d6e16c30342dde7018cc
+  main7 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

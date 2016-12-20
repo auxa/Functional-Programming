@@ -1,0 +1,328 @@
+
+==================== FINAL INTERFACE ====================
+2016-12-20 19:08:43.25448 UTC
+
+interface main@main:Lab04 7103
+  interface hash: 37dffcac942f87e763de43da3f9906b0
+  ABI hash: 2dfa53a4885c89389e0725df840d84fe
+  export-list hash: 3334e61850c7ed03a7c5cb4cd505794d
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 81066f0e99a1c624f8826d7d2ef9eec5
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lab04.addMethod
+  Lab04.check
+  Lab04.delete
+  Lab04.done04
+  Lab04.execute04
+  Lab04.exit04
+  Lab04.findAndDelete
+  Lab04.fixed
+  Lab04.getVal
+  Lab04.mkprompt
+  Lab04.printThis
+  Lab04.prompt04
+  Lab04.thisIsLab04
+  Lab04.toStringThis
+  Lab04.State
+module dependencies: BinTree
+package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:Data.Maybe 1cb58de2b04ee3c0c0a7dc9201184aff
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.IO.Handle.Text 06d2dc7704bcfe88a2157fd04748ace5
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  base-4.8.2.0:System.IO 0248c1e850b7ea124cf7a2e1669ebf67
+import  -/  base-4.8.2.0:Text.Read ef0ef92fb7358ae94bab089940adfd2a
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  BinTree 03e75a5640ff3e092d41e970eca6a216
+  exports: 71448bd79c2ab5bcc92c157d1120de03
+  BinTree 81aefdecbef457d83b602830ff5d95a6
+  Branch 770df489c61d06c588dcf92a12ae9eb8
+  Empty cda84d3d71af71ac5a3a48fcf6a72805
+  Leaf 44887b80f944cca79476647b0ff99648
+  treeInsert 7475cf96315e3a4e3171a56d1fb96ed5
+  treeLookup 30a390682c1902385bfa69304d3f161b
+9b14e81c47a31d2efe3b667a5bbf6563
+  $waddMethod ::
+    GHC.Base.String
+    -> GHC.Base.String
+    -> BinTree.BinTree GHC.Base.String GHC.Types.Float
+    -> GHC.Types.Float
+    -> (# BinTree.BinTree GHC.Base.String GHC.Types.Float,
+          GHC.Types.Float #)
+  {- Arity: 4, Strictness: <L,U><L,U><S,U><L,1*U(U)>, Inline: [0],
+     Unfolding: (\ w :: GHC.Base.String
+                   w1 :: GHC.Base.String
+                   ww :: BinTree.BinTree GHC.Base.String GHC.Types.Float
+                   ww1 :: GHC.Types.Float ->
+                 case BinTree.treeLookup
+                        @ GHC.Base.String
+                        @ GHC.Types.Float
+                        GHC.Classes.$fOrd[]_$s$fOrd[]1
+                        w
+                        ww of wild {
+                   GHC.Base.Nothing
+                   -> (# BinTree.treeInsert
+                           @ GHC.Base.String
+                           @ GHC.Types.Float
+                           GHC.Classes.$fOrd[]_$s$fOrd[]1
+                           w
+                           (case Text.Read.readEither6
+                                   @ GHC.Types.Float
+                                   (Text.ParserCombinators.ReadP.run
+                                      @ GHC.Types.Float
+                                      Lab04.addMethod3
+                                      w1) of wild1 {
+                              [] -> Lab04.addMethod2
+                              : x ds
+                              -> case ds of wild2 { [] -> x : ipv ipv1 -> Lab04.addMethod1 } })
+                           ww,
+                         case ww1 of wild1 { GHC.Types.F# x ->
+                         case Text.Read.readEither6
+                                @ GHC.Types.Float
+                                (Text.ParserCombinators.ReadP.run
+                                   @ GHC.Types.Float
+                                   Lab04.addMethod3
+                                   w1) of wild2 {
+                           [] -> Lab04.addMethod2
+                           : x1 ds
+                           -> case ds of wild3 {
+                                []
+                                -> case x1 of wild4 { GHC.Types.F# y ->
+                                   GHC.Types.F# (GHC.Prim.plusFloat# x y) }
+                                : ipv ipv1 -> Lab04.addMethod1 } } } #)
+                   GHC.Base.Just ipv
+                   -> (# BinTree.treeInsert
+                           @ GHC.Base.String
+                           @ GHC.Types.Float
+                           GHC.Classes.$fOrd[]_$s$fOrd[]1
+                           w
+                           (case Text.Read.readEither6
+                                   @ GHC.Types.Float
+                                   (Text.ParserCombinators.ReadP.run
+                                      @ GHC.Types.Float
+                                      Lab04.addMethod3
+                                      w1) of wild1 {
+                              [] -> Lab04.addMethod2
+                              : x ds
+                              -> case ds of wild2 { [] -> x : ipv1 ipv2 -> Lab04.addMethod1 } })
+                           ww,
+                         case ww1 of wild1 { GHC.Types.F# x ->
+                         case Text.Read.readEither6
+                                @ GHC.Types.Float
+                                (Text.ParserCombinators.ReadP.run
+                                   @ GHC.Types.Float
+                                   Lab04.addMethod3
+                                   w1) of wild2 {
+                           [] -> Lab04.addMethod2
+                           : x1 ds
+                           -> case ds of wild3 {
+                                []
+                                -> case x1 of wild4 { GHC.Types.F# y ->
+                                   case ipv of wild5 { GHC.Types.F# y1 ->
+                                   GHC.Types.F#
+                                     (GHC.Prim.minusFloat# (GHC.Prim.plusFloat# x y) y1) } }
+                                : ipv1 ipv2 -> Lab04.addMethod1 } } } #) }) -}
+b97940defff2f9713f5e9a0468c8164a
+  type State =
+    (BinTree.BinTree GHC.Base.String GHC.Types.Float, GHC.Types.Float)
+60afde62c3a1e8f29855810183655a4d
+  addMethod ::
+    GHC.Base.String -> GHC.Base.String -> Lab04.State -> Lab04.State
+  {- Arity: 3, Strictness: <L,U><L,U><S(SL),1*U(U,1*U(U))>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ w :: GHC.Base.String w1 :: GHC.Base.String w2 :: Lab04.State ->
+                 case w2 of ww { (,) ww1 ww2 ->
+                 case Lab04.$waddMethod w w1 ww1 ww2 of ww3 { (#,#) ww4 ww5 ->
+                 (ww4, ww5) } }) -}
+8d367a710bb27eea4997732a0d7cd7fe
+  addMethod1 :: GHC.Types.Float
+  {- Strictness: b -}
+65cca7408e42433324ec7e494dc54652
+  addMethod2 :: GHC.Types.Float
+  {- Strictness: b -}
+63b1ccf3b64ea03a488839fdc5390e24
+  addMethod3 :: Text.ParserCombinators.ReadP.P GHC.Types.Float
+  {- Unfolding: ((GHC.Read.$fReadFloat7
+                    GHC.Read.$fReadFloat_$sconvertFrac
+                    Text.ParserCombinators.ReadPrec.minPrec)
+                   `cast`
+                 (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <GHC.Types.Float>_R)
+                   @ GHC.Types.Float
+                   (Text.Read.readEither5 @ GHC.Types.Float)) -}
+5e020c6f54f4ec604f78a05785665368
+  check :: Lab04.State -> GHC.Types.Float
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (BinTree.BinTree GHC.Base.String GHC.Types.Float,
+                          GHC.Types.Float) ->
+                 case ds of wild { (,) holder checkingThis -> checkingThis }) -}
+1bebc3b010e5b81ce95e10a7e85022ef
+  delete :: Lab04.State -> GHC.Base.String -> Lab04.State
+  {- Arity: 2, Strictness: <S(SL),1*U(U,U)><L,U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: Lab04.State w1 :: GHC.Base.String ->
+                 case w of ww { (,) ww1 ww2 ->
+                 case BinTree.treeLookup
+                        @ GHC.Base.String
+                        @ GHC.Types.Float
+                        GHC.Classes.$fOrd[]_$s$fOrd[]1
+                        w1
+                        ww1 of wild {
+                   GHC.Base.Nothing -> (ww1, ww2)
+                   GHC.Base.Just a1
+                   -> let {
+                        temp :: BinTree.BinTree GHC.Base.String GHC.Types.Float
+                        = Lab04.findAndDelete ww1 w1
+                      } in
+                      (temp, Lab04.getVal temp) } }) -}
+8d5bd6616f40888ac0dd167abbcd17d3
+  done04 :: [GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ command :: [GHC.Types.Char] ->
+                 GHC.Base.eqString command Lab04.done1) -}
+46c5ab7b6f04229f005abedf387c8ebd
+  done1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "exit"#) -}
+626b26b8108b799aac19d47eb05a2967
+  execute04 ::
+    GHC.IO.Handle.Types.Handle
+    -> GHC.IO.Handle.Types.Handle
+    -> [GHC.Types.Char]
+    -> Lab04.State
+    -> GHC.Types.IO Lab04.State
+  {- Arity: 5, Strictness: <L,U><L,U><S,U><L,U(U,U(U))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lab04.execute1
+                  `cast`
+                (<GHC.IO.Handle.Types.Handle>_R
+                 ->_R <GHC.IO.Handle.Types.Handle>_R
+                 ->_R <[GHC.Types.Char]>_R
+                 ->_R <Lab04.State>_R
+                 ->_R Sym (GHC.Types.NTCo:IO[0] <Lab04.State>_R)) -}
+e588e3bb842a8694809bc15b495bfed8
+  execute1 ::
+    GHC.IO.Handle.Types.Handle
+    -> GHC.IO.Handle.Types.Handle
+    -> [GHC.Types.Char]
+    -> Lab04.State
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, Lab04.State #)
+  {- Arity: 5, Strictness: <L,U><L,U><S,U><L,U(U,U(U))><L,U> -}
+117e8595da4d495f8494bb13e7a7b3c5
+  exit04 :: GHC.Base.Monad m => Lab04.State -> m GHC.Types.Float
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LLLC(S)L),1*U(A,A,A,1*C1(U),A)><L,1*U(A,1*U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ (m :: * -> *)
+                   $dMonad :: GHC.Base.Monad m
+                   state :: Lab04.State ->
+                 GHC.Base.return
+                   @ m
+                   $dMonad
+                   @ GHC.Types.Float
+                   (case state of wild { (,) holder checkingThis ->
+                    checkingThis })) -}
+8cd6aeadeec2558e98a2a26a3c26b16a
+  findAndDelete ::
+    BinTree.BinTree GHC.Base.String GHC.Types.Float
+    -> GHC.Base.String
+    -> BinTree.BinTree GHC.Base.String GHC.Types.Float
+  {- Arity: 2, Strictness: <S,1*U><L,U> -}
+e120b4ed2cc70016c8d92602d5a18341
+  fixed :: Lab04.State -> Lab04.State
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SS),1*U(U,1*U(U))>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: Lab04.State ->
+                 case w of ww { (,) ww1 ww2 ->
+                 case ww2 of ww3 { GHC.Types.F# ww4 ->
+                 case Lab04.getVal ww1 of wild { GHC.Types.F# x ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.eqFloat# x ww4) of wild1 {
+                   GHC.Types.False -> (ww1, wild)
+                   GHC.Types.True -> (ww1, GHC.Types.F# ww4) } } } }) -}
+77f45e4f18f22ae9a89a479c6f04a22c
+  getVal ::
+    BinTree.BinTree GHC.Base.String GHC.Types.Float -> GHC.Types.Float
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+002c6fa32162bcbaf8a3911a0f62971c
+  mkprompt :: Lab04.State -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <L,1*U(A,1*U(U))>,
+     Unfolding: (\ state :: Lab04.State ->
+                 GHC.CString.unpackAppendCString#
+                   " \n\
+                   \Current Total:"#
+                   (case state of wild { (,) holder checkingThis ->
+                    case checkingThis of ww { GHC.Types.F# ww1 ->
+                    GHC.Base.++
+                      @ GHC.Types.Char
+                      (GHC.Float.$w$sshowSignedFloat1
+                         GHC.Float.$fShowFloat_$sshowFloat
+                         GHC.Show.shows18
+                         ww1
+                         (GHC.Types.[] @ GHC.Types.Char))
+                      Lab04.mkprompt1 } })) -}
+10a18dcee6f5ecfe91c79f8b25d94d00
+  mkprompt1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "\n"#) -}
+c418c254db4f3334dd4af4d993327ef4
+  printThis :: Lab04.State -> GHC.Base.String
+  {- Arity: 1, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (BinTree.BinTree GHC.Base.String GHC.Types.Float,
+                          GHC.Types.Float) ->
+                 case ds of wild { (,) x y -> Lab04.toStringThis x }) -}
+71aa65f589b50388f682499c8c59edf7
+  prompt04 ::
+    GHC.IO.Handle.Types.Handle -> Lab04.State -> GHC.Types.IO ()
+  {- Arity: 3, Strictness: <S,U><L,1*U(A,1*U(U))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lab04.prompt1
+                  `cast`
+                (<GHC.IO.Handle.Types.Handle>_R
+                 ->_R <Lab04.State>_R
+                 ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+ac67d9323be240b6b52f117d6cee8175
+  prompt1 ::
+    GHC.IO.Handle.Types.Handle
+    -> Lab04.State
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <S,U><L,1*U(A,1*U(U))><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ hout :: GHC.IO.Handle.Types.Handle
+                   state :: Lab04.State
+                   eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   hout
+                   (Lab04.mkprompt state)
+                   GHC.Types.False
+                   eta) -}
+c3b838dad7606e957eef18366e6560bc
+  thisIsLab04 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "This is Lab 4"#) -}
+56022f3834085299c5123bba35da60e7
+  toStringThis ::
+    BinTree.BinTree GHC.Base.String GHC.Types.Float -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
