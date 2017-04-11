@@ -2,7 +2,7 @@
 
 ## *A few incrementally challenging _Haskell_ Problems*
 
-###The Topics Covered 
+### The Problems
 0. Lab00 -> You Had Me At Hello
 1. Lab01 -> Computing Path Distances
 2. Lab02 -> Path Finding (Your Way Home)
